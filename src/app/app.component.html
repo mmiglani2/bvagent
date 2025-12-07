@@ -1,0 +1,44 @@
+<header class="dark-header">
+  <div class="logo-container">
+    <a href="/" class="logo-link">
+      <img src="assets/BVAgentLogo.svg" alt="Buy Via Agents Logo" class="logo" />
+    </a>
+    <h1 class="sr-only">Buy Via Agents</h1>
+  </div>
+
+  <nav>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul [class.open]="menuOpen">
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
+      <li><a href="#booking" (click)="closeMenu()">Book</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Cheapest Prices for Products</h2>
+    <p>Prices may fluctuate but we have got you</p>
+  </section>
+
+  <section id="booking" class="booking-card booking-dark">
+    <h2>Launching Soon</h2>
+    <p class="coming-text">We’re preparing your best Ecommerce Agents. Stay tuned!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Buy Via Agents is a Agentic Ecommerce platform helping customers to make decisions on buying via popular online marketplaces .
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 BV Agents. All rights reserved.
+</footer>
